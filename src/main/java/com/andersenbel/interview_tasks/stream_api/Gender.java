@@ -6,6 +6,6 @@ package com.andersenbel.interview_tasks.stream_api;
 public enum Gender {
 
     MALE,
-    FEMALE;
-
+    FEMALE,
+    OTHER;
 }

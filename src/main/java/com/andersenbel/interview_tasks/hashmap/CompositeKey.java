@@ -7,21 +7,20 @@ import java.util.Objects;
  */
 public class CompositeKey {
 
-    private final int x;
-
-    private String s;
+    private int numberValue;
+    private String stringValue;
 
 //    @Override
 //    public boolean equals(Object o) {
 //        if (this == o) return true;
 //        if (o == null || getClass() != o.getClass()) return false;
 //        CompositeKey that = (CompositeKey) o;
-//        return x == that.x && Objects.equals(s, that.s);
+//        return numberValue == that.numberValue && Objects.equals(stringValue, that.stringValue);
 //    }
 //
 //    @Override
 //    public int hashCode() {
-//        return Objects.hash(x, s);
+//        return Objects.hash(numberValue, stringValue);
 //    }
 
         @Override
@@ -29,22 +28,24 @@ public class CompositeKey {
         return 5;
     }
 
-
-    public CompositeKey(int x, String s) {
-        this.x = x;
-        this.s = s;
+    public CompositeKey(int numberValue, String stringValue) {
+        this.numberValue = numberValue;
+        this.stringValue = stringValue;
     }
 
-    public void setS(String s) {
-        this.s = s;
+    public void setNumberValue(int numberValue) {
+        this.numberValue = numberValue;
     }
 
+    public void setStringValue(String stringValue) {
+        this.stringValue = stringValue;
+    }
 
     @Override
     public String toString() {
         return "{" +
-                "age=" + x +
-                ", name='" + s + '\'' +
+                "age=" + numberValue +
+                ", name='" + stringValue + '\'' +
                 '}';
     }
 }
