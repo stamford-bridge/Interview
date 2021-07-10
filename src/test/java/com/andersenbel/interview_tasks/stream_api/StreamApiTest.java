@@ -19,7 +19,7 @@ public class StreamApiTest {
     @Test
     void sum() {
         final int expected = 6;
-        Stream<String> stream = Stream.of("4", "3", "1", "-3", "1");
+        final Stream<String> stream = Stream.of("4", "3", "1", "-3", "1");
 
         int actual = 0;
 
@@ -32,8 +32,7 @@ public class StreamApiTest {
     @Test
     void findFemaleOldest() {
         final String expected = "Анастасия";
-
-        Stream<Person> stream = prepareTestStream();
+        final Stream<Person> stream = prepareTestStream();
 
         String actual = "";
 
@@ -46,10 +45,9 @@ public class StreamApiTest {
     @Test
     void printMaleNamesSorted() {
         final int expected = 3;
+        final Stream<Person> stream = prepareTestStream();
 
-        Stream<Person> stream = prepareTestStream();
-
-        int actual = 0;
+        long actual = 0;
 
         assertEquals(expected, actual);
     }

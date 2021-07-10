@@ -7,11 +7,11 @@ public class Person {
 
     private final String name;
 
-    private final int age;
+    private final Integer age;
 
     private final Gender gender;
 
-    public Person(String name, int age, Gender gender) {
+    public Person(final String name, final Integer age, final Gender gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -21,7 +21,7 @@ public class Person {
         return name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 

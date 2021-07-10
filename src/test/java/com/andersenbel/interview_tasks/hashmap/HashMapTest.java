@@ -3,6 +3,7 @@ package com.andersenbel.interview_tasks.hashmap;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Alexey Adamovich on 10.01.2021
@@ -14,10 +15,10 @@ public class HashMapTest {
      */
     @Test
     void sameHashCode() {
-        CompositeKey key1 = new CompositeKey(1, "first");
-        CompositeKey key2 = new CompositeKey(1, "first");
+        final CompositeKey key1 = new CompositeKey(1, "first");
+        final CompositeKey key2 = new CompositeKey(1, "first");
 
-        HashMap<CompositeKey, String> hashMap = new HashMap<>();
+        final Map<CompositeKey, String> hashMap = new HashMap<>();
         hashMap.put(key1, "value1");
         hashMap.put(key2, "value2");
 
@@ -31,10 +32,10 @@ public class HashMapTest {
      */
     @Test
     void changeKey1InBucket() {
-        CompositeKey key1 = new CompositeKey(1, "first");
-        CompositeKey key2 = new CompositeKey(1, "second");
+        final CompositeKey key1 = new CompositeKey(1, "first");
+        final CompositeKey key2 = new CompositeKey(1, "second");
 
-        HashMap<CompositeKey, String> hashMap = new HashMap<>();
+        final Map<CompositeKey, String> hashMap = new HashMap<>();
         hashMap.put(key1, "value1");
         
         key1.setStringValue("second");
