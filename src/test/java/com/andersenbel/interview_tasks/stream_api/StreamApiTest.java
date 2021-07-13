@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * @author Alexey Adamovich on 10.01.2021
  */
-public class StreamApiTest {
+class StreamApiTest {
 
     /**
      * Посчитать сумму

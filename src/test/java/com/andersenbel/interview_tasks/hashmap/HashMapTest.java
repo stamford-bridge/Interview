@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * @author Alexey Adamovich on 10.01.2021
  */
-public class HashMapTest {
+class HashMapTest {
 
     /**
      * Одинаковый hashcode, equals не переопределен
